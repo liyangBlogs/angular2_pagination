@@ -1,17 +1,1 @@
-<nav class = 'zbase-ui pagination pagination-3'>
-	<p>{{'第' | translate}}<span class = 'start-page'>{{startCount}}</span>-<span class = 'end-page'>{{endCount}}</span>{{'条' | translate}}/<span class = 'sum-count'>{{totalCount}}</span>{{'条' | translate}}</p>
-	<ul class = 'pager'>
-		<li class = 'firstPage'><a (click)="goPage(1)">{{'首页' | translate}}</a></li>
-		<li class = 'lastPage'><a (click)="goPage(pageCount)">{{'尾页' | translate}}</a></li>
-		<li class = 'prev over' [ngClass]= "{disabled: !previousItemValid}"><a (click)="previousPage(preItem)">{{'上一页' | translate}}</a></li>
-		<li class = 'over' *ngFor = "let pageNo of pageList" [ngClass] = "{active: seletedPage == pageNo}"><a (click)="setCurrentPage(pageNo)">{{pageNo}}</a></li>
-		<li class = 'next over' [ngClass]= "{disabled: !nextItemValid}"><a (click)="nextPage(nextItem)">{{'下一页' | translate}}</a></li>
-		<div class="gs-totle">
-			<p class = "totle">{{'共' | translate}}<span>{{pageCount}}</span>{{'页' | translate}}</p>
-			<span class = "pagego">{{'到第' | translate}}</span>
-			<input type='text' name='pages' class='name' [(ngModel)]="goCurrentPage"/>
-			<span class = "pagego">{{'页' | translate}}</span>
-			<a role="button" class = "pagin-button" (click) = "goPage(goCurrentPage)">{{'确定' | translate}}</a>
-		</div>
-	</ul>
-</nav>
+
