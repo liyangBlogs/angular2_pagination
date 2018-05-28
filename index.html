@@ -1,0 +1,7 @@
+<ng-pagination [totalCount]="totalCount" [(ngModel)]="currentPageIndex" [pageSize]="pageSize" (onPageIndexChanged)="onPageIndexChanged($event)" [currentPageIndex]="currentPageIndex"></ng-pagination>
+
+//.ts文件中
+public onPageIndexChanged(event: any): void {
+  this.pageIndex = event.currentPageIndex;
+  this.pageSize = event.pageSize;
+};
